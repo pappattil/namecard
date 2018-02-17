@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by pappattil (http://jsbin.com/wegejac/35/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+<meta name="description" content="Papp Attila">
+  <title>Papp Attila névjegye</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Merriweather%7cOpen+Sans" rel="stylesheet">
+<style id="jsbin-css">
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font:sans-serif;
+}
+
+.card{
+  border: 1px solid black;
+  border-radius: 15px;
+  /*background-color:lightgray;*/
+  width: 400px;
+  height: 600px;
+  margin: 10% auto 10%;
+  max-width: calc(100vw - 10px);
+  min-width: 300px;
+  text-align: center;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+  background-color: hsla(0, 0%, 100%, .84);
+   }
+.pic{
+  margin-top: 20px;
+  border: 1px solid blue;
+  box-shadow: hsla(0, 0%, 0%, .8) 1px 1px 10px;
+  border-radius: 30%;
+  width:100px;
+  filter: grayscale(40%);
+  transition: all 0.9s ease-in-out;
+}
+.pic:hover{
+  box-shadow: grey 1px 1px 80px;
+  border: 2px solid black;
+  transform: scale(1.1);
+  filter: grayscale(5%);
+}
+.about{
+  margin:15px 10%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  text-align: justify;
+  text-justify: inherit;
+}
+.links{
+  text-align: center;
+}
+
+.nev{
+  margin:0 10%;
+  }
+body{
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  background-color: #5f9ea0;
+  height: 100vh;
+  background: url('https://i.imgur.com/yhzRiV1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Merriweather","Times New Roman", serif;
+}
+li{
+ display: inline; 
+}
+
+h1{
+  font-family: "Open Sans","Arial", sans-serif;
+  font-size: 3.6rem;
+}
+h2{
+  font-family: "Open Sansv","Arial", sans-serif;
+  font-size: 2.4rem;
+}
+p{
+  font-size: 1.8rem;
+}
+.map{
+  color:red;
+}
+.fa-envelope{
+  color: #696969;
+  transition: all 0.3s ease-in-out;
+}
+.fa-envelope:hover{
+   color: darkblue;
+  transform: scale(1.2);
+}
+.fa-skype{
+  color: #696969;
+  transition: all 0.3s ease-in-out;
+}
+.fa-skype:hover{
+   color: #03aef0;
+ transform: scale(1.2);
+}
+.fa-github{
+  color: #696969;
+  transition: all 0.3s ease-in-out;
+}
+.fa-github:hover{
+   color: purple;
+   transform: scale(1.2);
+}
+.fa-google-plus{
+  color: #696969;
+  transition: all 0.3s ease-in-out;
+}
+.fa-google-plus:hover{
+   color: darkred;
+   transform: scale(1.2);
+}
+.fa-map-marker{
+  color: darkred;
+}
+textarea{
+  width:90%;
+  height: 80px;
+}
+input{
+  width:90%;
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+  <div class="head">
+    <img class="pic" src="https://i.imgur.com/bvZZA44.jpg" alt="Papp Attila profilkép">
+    <div class="nev">
+      <h1>Papp Attila</h1>
+      <h2>Webfejlesztő</h2>
+      <p><i class="fa fa-map-marker"></i>  Kiskunlacháza, HU</p>
+  </div> 
+  <div class="about"><p>Kisebb-nagyobb vállalkozásoknak végzek webfejlesztési és karbantartási munkákat. </p> <p> Ha fontos neked vagy cégednek az internetes megjelenés, keress meg bátran! </p>
+  
+    </div>
+  <div class="links">
+    <h2>Kapcsolat velem:</h2>
+   <ul>
+     <li><a data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope fa-2x" title="Küldj e-mailt!"></i></a></li>
+      <li><a href="skype:attila1001?chat"><i class="fa fa-skype fa-2x" title=" Skype Chat"></i></a>
+     </li>
+      <li><a href="https://github.com/pappattil"><i class="fa fa-github fa-2x" title="Github">   </i></a></li>
+      <li><a href="https://plus.google.com/u/0/115517169186112391571/posts" class="fa fa-google-plus fa-2x" aria-hidden="true" title="GooglePlusz"></a></li> 
+   </ul>
+    <br>
+      <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">E-mail küldés Papp Attila részére</h4>
+        </div>
+        <div class="modal-body">
+            <form method="POST" action="https://formspree.io/pappattil@freemail.hu" >
+              <input type="hidden" name="_next" value="http://attil.fw.hu" />
+              <input type="hidden" name="_language" value="hu" />
+              <input type="email" name="email" placeholder="E-mail címed">
+              
+              <p> <br></p>
+              <textarea name="message" placeholder="Üzeneted szövege"></textarea>
+              <br>
+              <button type="submit" >Küldés</button >
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Bezár</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--Modal End -->
+</div>
+    
+    <br>
+   
+  </div>
+</div>
+</body>
